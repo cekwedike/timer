@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
-class TimerProvider extends ChangeNotifier {
+class TimerProvider with ChangeNotifier {
   Duration _duration = Duration.zero;
   bool _isRunning = false;
   Timer? _timer;
